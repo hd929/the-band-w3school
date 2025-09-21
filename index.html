@@ -1,38 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Band - W3Schools</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Band - W3Schools</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-  <link href="./assets/css/style.css" rel="stylesheet">
-</head>
+  <body>
+    <!-- Header Navbar  -->
+    <nav class="header__navbar">
+      <ul class="header__navbar-list">
+        <li class="header__navbar-item"><a href="#">HOME</a></li>
+        <li class="header__navbar-item"><a href="#">BAND</a></li>
+        <li class="header__navbar-item"><a href="#">TOUR</a></li>
+        <li class="header__navbar-item"><a href="#">CONTACT</a></li>
+        <li class="header__navbar-item">
+          MORE <i class="fas fa-caret-down"></i>
+          <ul class="navbar__subnav">
+            <li class="navbar__subnav-item"><a href="#">Merchandise</a></li>
+            <li class="navbar__subnav-item"><a href="#">Extras</a></li>
+            <li class="navbar__subnav-item"><a href="#">Media</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="header__navbar-list">
+        <li class="header__navbar-item header__navbar-search">
+          <i class="fas fa-search"></i>
+        </li>
+      </ul>
+    </nav>
 
-<body>
-  <!-- Header Navbar  -->
-  <nav class="header__navbar">
-    <ul class="header__navbar-list">
-      <li class="header__navbar-item"><a href="#">HOME</a></li>
-      <li class="header__navbar-item"><a href="#">BAND</a></li>
-      <li class="header__navbar-item"><a href="#">TOUR</a></li>
-      <li class="header__navbar-item"><a href="#">CONTACT</a></li>
-      <li class="header__navbar-item">
-        MORE <i class="fas fa-caret-down"></i>
-        <ul class="navbar__subnav">
-          <li class="navbar__subnav-item"><a href="#">Merchandise</a></li>
-          <li class="navbar__subnav-item"><a href="#">Extras</a></li>
-          <li class="navbar__subnav-item"><a href="#">Media</a></li>
-        </ul>
-      </li>
-    </ul>
-    <ul class="header__navbar-list">
-      <li class="header__navbar-item header__navbar-search"><i class="fas fa-search"></i></li>
-    </ul>
-  </nav>
-</body>
+    <div class="content">
+      <!-- slider -->
+      <div class="content__slider">
+        <div class="content__slider-item active">
+          <img src="./assets/img/la.jpg" alt="Los Angeles" />
+          <div class="content__slider-caption">
+            <h3>Los Angeles</h3>
+            <p>We had the best time playing at Venice Beach!</p>
+          </div>
+        </div>
+        <div class="content__slider-item">
+          <img src="./assets/img/chicago.jpg" alt="Chicago" />
+          <div class="content__slider-caption">
+            <h3>Chicago</h3>
+            <p>Thank you, Chicago - A night we won't forget.</p>
+          </div>
+        </div>
+        <div class="content__slider-item">
+          <img src="./assets/img/ny.jpg" alt="New York" />
+          <div class="content__slider-caption">
+            <h3>New York</h3>
+            <p>The atmosphere in New York is lorem ipsum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 
+  <script src="./assets/js/main.js"></script>
 </html>
